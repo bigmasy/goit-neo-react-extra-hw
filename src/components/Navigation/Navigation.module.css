@@ -1,0 +1,62 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Лівий блок ліворуч, правий — праворуч */
+  background: #2a2a72;
+  padding: 1rem 2rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.leftBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rightBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto; /* гарантія, що блок прижметься до правого краю */
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #ffda79;
+}
+
+.active {
+  border-bottom: 2px solid #ffda79;
+  padding-bottom: 2px;
+}
+
+.username {
+  color: #fff;
+  font-weight: bold;
+}
+
+.logoutBtn {
+  background: #ff4757;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logoutBtn:hover {
+  background: #e84118;
+}
